@@ -325,9 +325,75 @@
         font-size: 12px;
     }
 
+
+    .container6{
+        background: grey;
+        height: 100vh;
+    }
+    .infoTab6{
+        background: white;
+        border: 1px transparent;
+        border-radius: 10px;
+        position: relative;
+        top: 100px;
+        left: 4%;
+        padding: 25px;
+        width: 92.5%;
+    }
+    .infoTab6 .head6{
+        display: grid;
+    }
+    .infoTab6 .head6{
+        display: grid;
+    }
+    .infoTab6 .head6 .infoP6{
+        font-size: 30px;
+        margin-top: 8px;
+        margin-bottom: 10px;
+     }
+     .infoTab6 .head6 .provider6{
+        padding-right: 50px;
+        margin-bottom: 15px;
+     }    
+     .totalSel{
+        display: flex;
+    }
+    .calc{
+        background: hsl(231, 100%, 99%);
+        padding: 15px;
+        border-radius: 8px;
+    }
+    .calc .subscript{
+        border-bottom: 1px solid gray;
+        margin-bottom: 15px;
+    }
+    .calc .onlSer{
+        margin-bottom: 10px;
+    }
+    .calc .larStor{
+        margin-bottom: 10px;
+    }
+    .infoTab6 .totalSel{
+        padding: 15px;
+    }
+    .infoTab6 .subscript{
+        display: flex;
+    }
+    .infoTab6 .onlSer{
+        display: flex;
+    }
+    .infoTab6 .larStor{
+        display: flex;
+    }
+    .infoTab6 .totalSel{
+        display: flex;
+    }
+    
+
     .container8{
         background: grey;
         height: 100vh;
+        display: none;
     }
     .infoTab8{
         background: white;
@@ -344,11 +410,11 @@
     }
     .infoTab8 img{
         width: 25%;
-        margin-bottom: 17px;
-        
+        margin-bottom: 17px; 
     }
     .infoTab8 .thankYou{
         text-align: center;
         line-height: 1.7;
     }
+
 }
