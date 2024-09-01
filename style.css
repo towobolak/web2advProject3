@@ -1,0 +1,326 @@
+@media only screen and (max-width: 767px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container1{
+        background: grey;
+        height: 100vh;
+        display: none;
+    }
+   .imgBac img{
+        position: absolute;
+        width: 100%;
+    }   
+    .infoTab1{
+        background: white;
+        border: 1px transparent;
+        border-radius: 15px;
+        position: relative;
+        top: 100px;
+        left: 4%;
+        padding: 25px;
+        width: 92.5%;
+    } 
+    .infoTab1 .head {
+        display: grid;
+    }
+    .infoTab1 .head .infoP{
+        font-size: 30px;
+        margin-top: 8px;
+        margin-bottom: 10px;
+    }
+    .infoTab1 .head .provider{
+        padding-right: 90px;
+        margin-bottom: 15px;
+    }
+    .name, .email, .phoneNumber{
+        display: grid;
+        margin-bottom: 10px;
+        width: 100%;
+        line-height: 2;
+    }
+    .name input {
+       padding: 12px;
+    }
+    .email input {
+        padding: 12px;
+    }
+    .phoneNumber input {
+        padding: 12px;
+    }
+    .slideNo1, .slideNo2, .slideNo3, .slideNo4{
+        background: transparent;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 50%;
+        padding: 8px;
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+    }
+    .sliderNo{
+        position: absolute;        
+        display: flex;
+        top: 50px;
+        line-height: 10px;
+        left: 28%;
+    }
+    .sliderNo .slideNo1{
+        margin-right: 20px;
+    }
+    .sliderNo .slideNo2{
+        margin-right: 20px;
+    }
+    .sliderNo .slideNo3{
+        margin-right: 20px;
+    }
+    .sliderNo .slideNo4{
+        margin-right: 20px;
+    }
+    .buttons{
+        background: white;
+        padding: 10px;
+        position: relative;
+        left: 0%;
+        bottom: 0px;
+    }
+    .buttons button{
+        color: rgb(255, 255, 255);
+        background: blue;
+        padding: 8px;
+        border-radius: 6px;
+        font-size: 18px;
+        margin-left: 70%;
+    }
+
+
+    .container2{
+        background: grey;
+        height: 100vh;
+        display: none;
+    }
+    .infoTab2{
+        background: white;
+        border: 1px transparent;
+        border-radius: 15px;
+        position: relative;
+        top: 100px;
+        left: 4%;
+        padding: 25px;
+        width: 92.5%;
+    }
+    .infoTab2 .head2{
+        display: grid;
+    }
+    .infoTab2 .arcade{
+        display: flex;
+    }
+    .infoTab2 .advanced{
+        display: flex;
+    }
+    .infoTab2 .pro{
+        display: flex;
+    }
+    .infoTab2 .arcade, .advanced, .pro{
+        padding: 15px;
+        border-radius: 7px;
+        border: 1px solid gray;
+        margin-bottom: 15px;
+    }
+    .infoTab2 .arcade img{
+       margin-right: 15px;
+    }
+    .infoTab2 .advanced img{
+        margin-right: 15px;
+     }
+     .infoTab2 .pro img{
+        margin-right: 15px;
+     }
+     .infoTab2 .head2 .infoP2{
+        font-size: 30px;
+        margin-top: 8px;
+        margin-bottom: 10px;
+     }
+     .infoTab2 .head2 .provider2{
+        padding-right: 60px;
+        margin-bottom: 15px;
+     }
+     .buttons1{
+        background: white;
+        padding: 10px;
+        position: absolute;
+        left: 0%;
+        bottom: 0px;
+        width: 100%;
+    }
+     .buttons1 .btn1{
+        color: gray;
+        background: white;
+        padding: 8px;
+        border-radius: 6px;
+        font-size: 18px;
+        border: 1px transparent;
+    }
+    .buttons1 .btn2{
+        color: rgb(255, 255, 255);
+        background: blue;
+        padding: 8px;
+        border-radius: 6px;
+        font-size: 18px;
+        float: right;
+    }
+
+
+    .container3{
+        background: grey;
+        height: 100vh;
+        display: none;
+    }
+    .infoTab3{
+        background: white;
+        border: 1px transparent;
+        border-radius: 15px;
+        position: relative;
+        top: 100px;
+        left: 4%;
+        padding: 25px;
+        width: 92.5%;
+    }
+    .infoTab3 .head3{
+        display: grid;
+    }
+    .infoTab3 .arcade{
+        display: flex;
+    }
+    .infoTab3 .advanced{
+        display: flex;
+    }
+    .infoTab3 .pro{
+        display: flex;
+    }
+    .infoTab3 .arcade, .advanced, .pro{
+        padding: 15px;
+        border-radius: 7px;
+        border: 1px solid gray;
+        margin-bottom: 15px;
+    }
+    .infoTab3 .arcade img{
+       margin-right: 15px;
+    }
+    .infoTab3 .advanced img{
+        margin-right: 15px;
+     }
+     .infoTab3 .pro img{
+        margin-right: 15px;
+     }
+     .infoTab3 .head3 .infoP3{
+        font-size: 30px;
+        margin-top: 8px;
+        margin-bottom: 10px;
+     }
+     .infoTab3 .head3 .provider3{
+        padding-right: 60px;
+        margin-bottom: 15px;
+     }
+
+
+     .container4{
+        background: grey;
+        height: 100vh;
+    }
+     .infoTab4{
+        background: white;
+        border: 1px transparent;
+        border-radius: 15px;
+        position: relative;
+        top: 100px;
+        left: 4%;
+        padding: 25px;
+        width: 92.5%;
+    }
+    .infoTab4 .head4{
+        display: grid;
+    }
+    .infoTab4 .head4{
+        display: grid;
+    }
+    .infoTab4 .head4 .infoP4{
+        font-size: 30px;
+        margin-top: 8px;
+        margin-bottom: 10px;
+     }
+     .infoTab4 .head4 .provider4{
+        padding-right: 60px;
+        margin-bottom: 15px;
+     }
+     .onlineServices .check1, 
+     .largerStorage .check2, 
+     .customizableProfile .check3 {
+        margin-right: 15px;
+     }
+     .onlineServices, .largerStorage, .customizableProfile{
+        display: flex;
+     }
+
+     .onlSer, .larSto, .custPro{
+        width: 100%;
+     }
+     .infoTab4 .onlineServices, .largerStorage, .customizableProfile{
+        padding: 15px;
+        border-radius: 7px;
+        border: 1px solid gray;
+        margin-bottom: 15px;
+        font-size: 12px;
+    }
+    
+
+    .container5{
+        background: grey;
+        height: 100vh;
+        display: none;
+    }
+     .infoTab5{
+        background: white;
+        border: 1px transparent;
+        border-radius: 15px;
+        position: relative;
+        top: 100px;
+        left: 4%;
+        padding: 25px;
+        width: 92.5%;
+    }
+    .infoTab5 .head5{
+        display: grid;
+    }
+    .infoTab5 .head5{
+        display: grid;
+    }
+    .infoTab5 .head5 .infoP5{
+        font-size: 30px;
+        margin-top: 8px;
+        margin-bottom: 10px;
+     }
+     .infoTab5 .head5 .provider5{
+        padding-right: 60px;
+        margin-bottom: 15px;
+     }
+     .onlineServices .check1, 
+     .largerStorage .check2, 
+     .customizableProfile .check3 {
+        margin-right: 15px;
+     }
+     .onlineServices, .largerStorage, .customizableProfile{
+        display: flex;
+     }
+
+     .onlSer, .larSto, .custPro{
+        width: 100%;
+     }
+     .infoTab5 .onlineServices, .largerStorage, .customizableProfile{
+        padding: 15px;
+        border-radius: 7px;
+        border: 1px solid gray;
+        margin-bottom: 15px;
+        font-size: 12px;
+    }
+}
