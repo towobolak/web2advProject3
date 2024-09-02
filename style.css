@@ -32,7 +32,7 @@
     display: none;
 }
 
-.plans.monthly2, .plans.yearly2 {
+.planss.monthly2, .planss.yearly2 {
     display: block;
 }
 
@@ -604,6 +604,10 @@ form input:required:valid {
     .infoTab4 .largerStorage input, 
     .infoTab4 .customizableProfile input {
         margin-right: 3%;
+    }
+
+    .infoTab4 .planss.monthly2{
+        display: flex;
     }
 
     .infoTab2 .arcade img,
