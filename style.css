@@ -111,9 +111,7 @@ form input:required:valid {
 
     .container1,
     .container2,
-    .container3,
     .container4,
-    .container5,
     .container6,
     .container8 {
         background: hsl(217, 100%, 97%);
@@ -137,8 +135,7 @@ form input:required:valid {
     .infoTab1, 
     .infoTab2, 
     .infoTab4,  
-    .infoTab6, 
-    .infoTab8 {
+    .infoTab6{
         background: white;
         border: 1px transparent;
         border-radius: 15px;
@@ -170,9 +167,7 @@ form input:required:valid {
 
     .infoTab1 .provider,
     .infoTab2 .provider2,
-    .infoTab3 .provider3,
     .infoTab4 .provider4,
-    .infoTab5 .provider5,
     .infoTab6 .provider6 {
         padding-right: 60px;
         margin-bottom: 15px;
@@ -292,10 +287,7 @@ form input:required:valid {
 
     .infoTab2 .arcade img,
     .infoTab2 .advanced img,
-    .infoTab2 .pro img,
-    .infoTab3 .arcade img,
-    .infoTab3 .advanced img,
-    .infoTab3 .pro img {
+    .infoTab2 .pro img {
         margin-right: 15px;
     }
 
@@ -365,7 +357,7 @@ form input:required:valid {
     
     .mainContainer .sideBar .imgBac .img2{
         display: block;
-        position: relative;
+        position: static;
     }
 
     .mainContainer .sideBar .sliderNo {
@@ -402,9 +394,7 @@ form input:required:valid {
 
     .container1,
     .container2,
-    .container3,
     .container4,
-    .container5,
     .container6,
     .container8 {
         display: none;
@@ -455,11 +445,8 @@ form input:required:valid {
 
     .infoTab1 .provider,
     .infoTab2 .provider2,
-    .infoTab3 .provider3,
     .infoTab4 .provider4,
-    .infoTab5 .provider5,
-    .infoTab6 .provider6,
-    .infoTab8 {
+    .infoTab6 .provider6 {
         padding-right: 60px;
         margin-bottom: 15px;
         color: hsl(231, 11%, 63%);
@@ -617,11 +604,25 @@ form input:required:valid {
         text-align: center;
     }
 
-    .infoTab8 {
+    .container8{
+        margin-top: 10%;
+        width: 40%;
+        margin-left: 15%;
+    }
+  
+    }
+    .infoTab8 img{
+        position: relative;
+        margin-left: 38%;
+    }
+
+
+    .thankYou {
         position: relative;
         top: 8%;
         left: 15%;
-        width: 55%;
+        height: 40%;
+        width: 65%;
         font-family: "Ubuntu", sans-serif;
         line-height: 2;
         text-align: center;
