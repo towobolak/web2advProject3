@@ -55,6 +55,7 @@
 .plan .text {
     margin-left: 10px;
 }
+
 .arcade,
 .advanced,
 .pro{
@@ -324,6 +325,10 @@ form input:required:valid {
         background: hsl(217, 100%, 97%);
     }
 
+    .plans .monthly{
+        display: flex;
+    }
+
     .sliderNo div.active {
         background-color: hsl(206, 94%, 87%);
         color: #fff;
@@ -351,16 +356,15 @@ form input:required:valid {
         display: flex;
         background: white;
         position: absolute;
-        top: 5%;
-        left: 11%;
+        top: 15%;
+        left: 20%;
         padding: 15px;
         border-radius: 10px;
-        width: 80%;
+        width: 65%;
     }
     
     .mainContainer .sideBar .imgBac .img2{
         display: block;
-        height: 80vh;
         position: relative;
     }
 
@@ -465,7 +469,7 @@ form input:required:valid {
     .name, .email, .phoneNumber {
         display: grid;
         margin-bottom: 10px;
-        width: 100%;
+        width: 85%;
         line-height: 3;
         color: hsl(213, 96%, 18%);
 
@@ -552,19 +556,16 @@ form input:required:valid {
         font-size: 18px;
         float: right;
     }
-    
+
     .infoTab2 .arcade, 
     .infoTab2 .advanced, 
     .infoTab2 .pro{
-        display: flex;
         padding: 10px;
         border-radius: 7px;
         border: 1px solid gray;
         margin-bottom: 15px;
-        font-size: 16px;
-        width: 35%;
-        height: 20vh;
-
+        font-size: 12px;
+        width: 45%;
     }
 
     .infoTab4 .onlineServices, 
@@ -613,22 +614,13 @@ form input:required:valid {
     }
 
     .infoTab8 {
-        text-align: center;
-        padding-top: 90px;
-        padding-bottom: 90px;
-    }
-
-    .infoTab8 img {
-        width: 15%;
-        margin-bottom: 17px; 
-    }
-    .infoTab8 {
         position: relative;
-        top: 15%;
+        top: 8%;
         left: 15%;
-        width: 70%;
+        width: 55%;
         font-family: "Ubuntu", sans-serif;
-        line-height: 3;
+        line-height: 2;
+        text-align: center;
     }
 }
 
