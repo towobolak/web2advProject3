@@ -135,12 +135,13 @@ form input:required:valid {
     .infoTab1, 
     .infoTab2, 
     .infoTab4,  
-    .infoTab6{
+    .infoTab6,
+    .infoTab8{
         background: white;
         border: 1px transparent;
         border-radius: 15px;
         position: relative;
-        top: 100px;
+        top: 60px;
         left: 4%;
         padding: 25px;
         width: 92.5%;
@@ -295,6 +296,7 @@ form input:required:valid {
         text-align: center;
         padding-top: 90px;
         padding-bottom: 90px;
+        line-height: 1.5;
     }
 
     .infoTab8 img {
