@@ -1,19 +1,126 @@
+.toggle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.toggle button {
+    background-color: #e0e0e0;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.toggle button.active {
+    background-color: #4caf50;
+    color: white;
+}
+
+.plans {
+    display: none;
+}
+
+.plans.monthly, .plans.yearly {
+    display: block;
+}
+
+.planss {
+    display: none;
+}
+
+.plans.monthly2, .plans.yearly2 {
+    display: block;
+}
+
+.plan {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.plan-input {
+    margin-right: 10px;
+}
+
+.plan .arcade, .plan .advanced, .plan .pro {
+    display: flex;
+    align-items: center;
+}
+
+.plan .text {
+    margin-left: 10px;
+}
+.arcade,
+.advanced,
+.pro{
+    width: 100%;
+}
+input[type="radio"]:checked + div {
+    border: 2px solid #4caf50;
+}
+form input {
+    border: 1px solid #ccc;
+    padding: 8px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+
+form input:required:invalid {
+    border-color: red;
+}
+
+form input:required:valid {
+    border-color: green;
+}
+
 @media only screen and (max-width: 767px) {
-    *{
+    * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
-    .container1{
+
+    .sliderNo div.active {
+        background-color: #f39c12;
+        color: #fff;
+        border-radius: 50%;
+        padding: 10px;
+    }
+
+    .container1,
+    .container2,
+    .container3,
+    .container4,
+    .container5,
+    .container6,
+    .container8 {
         background: grey;
         height: 100vh;
         display: none;
     }
-   .imgBac img{
+
+    .container1.active, 
+    .container2.active, 
+    .container4.active, 
+    .container6.active, 
+    .container8.active {
+        display: block;
+    }
+
+    .imgBac img {
         position: absolute;
         width: 100%;
-    }   
-    .infoTab1{
+    }
+
+    .infoTab1, 
+    .infoTab2, 
+    .infoTab4,  
+    .infoTab6, 
+    .infoTab8 {
         background: white;
         border: 1px transparent;
         border-radius: 15px;
@@ -22,35 +129,46 @@
         left: 4%;
         padding: 25px;
         width: 92.5%;
-    } 
-    .infoTab1 .head {
+    }
+
+    .infoTab1 .head,
+    .infoTab2 .head2,
+    .infoTab4 .head4,
+    .infoTab6 .head6 {
         display: grid;
     }
-    .infoTab1 .head .infoP{
+
+    .infoTab1 .infoP,
+    .infoTab2 .infoP2,
+    .infoTab4 .infoP4,
+    .infoTab6 .infoP6 {
         font-size: 30px;
         margin-top: 8px;
         margin-bottom: 10px;
     }
-    .infoTab1 .head .provider{
-        padding-right: 90px;
+
+    .infoTab1 .provider,
+    .infoTab2 .provider2,
+    .infoTab3 .provider3,
+    .infoTab4 .provider4,
+    .infoTab5 .provider5,
+    .infoTab6 .provider6 {
+        padding-right: 60px;
         margin-bottom: 15px;
     }
-    .name, .email, .phoneNumber{
+
+    .name, .email, .phoneNumber {
         display: grid;
         margin-bottom: 10px;
         width: 100%;
         line-height: 2;
     }
-    .name input {
-       padding: 12px;
-    }
-    .email input {
+
+    .name input, .email input, .phoneNumber input {
         padding: 12px;
     }
-    .phoneNumber input {
-        padding: 12px;
-    }
-    .slideNo1, .slideNo2, .slideNo3, .slideNo4{
+
+    .slideNo1, .slideNo2, .slideNo3, .slideNo4 {
         background: transparent;
         border: 1px solid rgb(255, 255, 255);
         border-radius: 50%;
@@ -58,33 +176,32 @@
         font-size: 20px;
         color: rgb(255, 255, 255);
     }
-    .sliderNo{
+
+    .sliderNo {
         position: absolute;        
         display: flex;
         top: 50px;
         line-height: 10px;
         left: 28%;
     }
-    .sliderNo .slideNo1{
+
+    .sliderNo .slideNo1,
+    .sliderNo .slideNo2,
+    .sliderNo .slideNo3,
+    .sliderNo .slideNo4 {
         margin-right: 20px;
     }
-    .sliderNo .slideNo2{
-        margin-right: 20px;
-    }
-    .sliderNo .slideNo3{
-        margin-right: 20px;
-    }
-    .sliderNo .slideNo4{
-        margin-right: 20px;
-    }
-    .buttons{
+
+    .buttons, .buttons1 {
         background: white;
         padding: 10px;
-        position: relative;
+        position: fixed;
         left: 0%;
         bottom: 0px;
+        width: 100%;
     }
-    .buttons button{
+
+    .buttons button {
         color: rgb(255, 255, 255);
         background: blue;
         padding: 8px;
@@ -93,67 +210,7 @@
         margin-left: 70%;
     }
 
-
-    .container2{
-        background: grey;
-        height: 100vh;
-        display: none;
-    }
-    .infoTab2{
-        background: white;
-        border: 1px transparent;
-        border-radius: 15px;
-        position: relative;
-        top: 100px;
-        left: 4%;
-        padding: 25px;
-        width: 92.5%;
-    }
-    .infoTab2 .head2{
-        display: grid;
-    }
-    .infoTab2 .arcade{
-        display: flex;
-    }
-    .infoTab2 .advanced{
-        display: flex;
-    }
-    .infoTab2 .pro{
-        display: flex;
-    }
-    .infoTab2 .arcade, .advanced, .pro{
-        padding: 15px;
-        border-radius: 7px;
-        border: 1px solid gray;
-        margin-bottom: 15px;
-    }
-    .infoTab2 .arcade img{
-       margin-right: 15px;
-    }
-    .infoTab2 .advanced img{
-        margin-right: 15px;
-     }
-     .infoTab2 .pro img{
-        margin-right: 15px;
-     }
-     .infoTab2 .head2 .infoP2{
-        font-size: 30px;
-        margin-top: 8px;
-        margin-bottom: 10px;
-     }
-     .infoTab2 .head2 .provider2{
-        padding-right: 60px;
-        margin-bottom: 15px;
-     }
-     .buttons1{
-        background: white;
-        padding: 10px;
-        position: absolute;
-        left: 0%;
-        bottom: 0px;
-        width: 100%;
-    }
-     .buttons1 .btn1{
+    .buttons1 .btn1 {
         color: gray;
         background: white;
         padding: 8px;
@@ -161,7 +218,8 @@
         font-size: 18px;
         border: 1px transparent;
     }
-    .buttons1 .btn2{
+
+    .buttons1 .btn2 {
         color: rgb(255, 255, 255);
         background: blue;
         padding: 8px;
@@ -170,103 +228,23 @@
         float: right;
     }
 
-
-    .container3{
-        background: grey;
-        height: 100vh;
-        display: none;
-    }
-    .infoTab3{
-        background: white;
-        border: 1px transparent;
-        border-radius: 15px;
-        position: relative;
-        top: 100px;
-        left: 4%;
-        padding: 25px;
-        width: 92.5%;
-    }
-    .infoTab3 .head3{
-        display: grid;
-    }
-    .infoTab3 .arcade{
+    .infoTab2 .arcade, 
+    .infoTab2 .advanced, 
+    .infoTab2 .pro, 
+    .infoTab3 .arcade, 
+    .infoTab3 .advanced, 
+    .infoTab3 .pro, 
+    .infoTab4 .onlineServices, 
+    .infoTab4 .largerStorage, 
+    .infoTab4 .customizableProfile, 
+    .infoTab5 .onlineServices, 
+    .infoTab5 .largerStorage, 
+    .infoTab5 .customizableProfile, 
+    .infoTab6 .totalSel, 
+    .infoTab6 .subscript, 
+    .infoTab6 .onlSer, 
+    .infoTab6 .larStor {
         display: flex;
-    }
-    .infoTab3 .advanced{
-        display: flex;
-    }
-    .infoTab3 .pro{
-        display: flex;
-    }
-    .infoTab3 .arcade, .advanced, .pro{
-        padding: 15px;
-        border-radius: 7px;
-        border: 1px solid gray;
-        margin-bottom: 15px;
-    }
-    .infoTab3 .arcade img{
-       margin-right: 15px;
-    }
-    .infoTab3 .advanced img{
-        margin-right: 15px;
-     }
-     .infoTab3 .pro img{
-        margin-right: 15px;
-     }
-     .infoTab3 .head3 .infoP3{
-        font-size: 30px;
-        margin-top: 8px;
-        margin-bottom: 10px;
-     }
-     .infoTab3 .head3 .provider3{
-        padding-right: 60px;
-        margin-bottom: 15px;
-     }
-
-
-     .container4{
-        background: grey;
-        height: 100vh;
-        display: none;
-    }
-     .infoTab4{
-        background: white;
-        border: 1px transparent;
-        border-radius: 15px;
-        position: relative;
-        top: 100px;
-        left: 4%;
-        padding: 25px;
-        width: 92.5%;
-    }
-    .infoTab4 .head4{
-        display: grid;
-    }
-    .infoTab4 .head4{
-        display: grid;
-    }
-    .infoTab4 .head4 .infoP4{
-        font-size: 30px;
-        margin-top: 8px;
-        margin-bottom: 10px;
-     }
-     .infoTab4 .head4 .provider4{
-        padding-right: 60px;
-        margin-bottom: 15px;
-     }
-     .onlineServices .check1, 
-     .largerStorage .check2, 
-     .customizableProfile .check3 {
-        margin-right: 15px;
-     }
-     .onlineServices, .largerStorage, .customizableProfile{
-        display: flex;
-     }
-
-     .onlSer, .larSto, .custPro{
-        width: 100%;
-     }
-     .infoTab4 .onlineServices, .largerStorage, .customizableProfile{
         padding: 15px;
         border-radius: 7px;
         border: 1px solid gray;
@@ -274,147 +252,23 @@
         font-size: 12px;
     }
 
-
-    .container5{
-        background: grey;
-        height: 100vh;
-        display: none;
-    }
-     .infoTab5{
-        background: white;
-        border: 1px transparent;
-        border-radius: 15px;
-        position: relative;
-        top: 100px;
-        left: 4%;
-        padding: 25px;
-        width: 92.5%;
-    }
-    .infoTab5 .head5{
-        display: grid;
-    }
-    .infoTab5 .head5{
-        display: grid;
-    }
-    .infoTab5 .head5 .infoP5{
-        font-size: 30px;
-        margin-top: 8px;
-        margin-bottom: 10px;
-     }
-     .infoTab5 .head5 .provider5{
-        padding-right: 60px;
-        margin-bottom: 15px;
-     }
-     .onlineServices .check1, 
-     .largerStorage .check2, 
-     .customizableProfile .check3 {
+    .infoTab2 .arcade img,
+    .infoTab2 .advanced img,
+    .infoTab2 .pro img,
+    .infoTab3 .arcade img,
+    .infoTab3 .advanced img,
+    .infoTab3 .pro img {
         margin-right: 15px;
-     }
-     .onlineServices, .largerStorage, .customizableProfile{
-        display: flex;
-     }
-
-     .onlSer, .larSto, .custPro{
-        width: 100%;
-     }
-     .infoTab5 .onlineServices, .largerStorage, .customizableProfile{
-        padding: 15px;
-        border-radius: 7px;
-        border: 1px solid gray;
-        margin-bottom: 15px;
-        font-size: 12px;
     }
 
-
-    .container6{
-        background: grey;
-        height: 100vh;
-    }
-    .infoTab6{
-        background: white;
-        border: 1px transparent;
-        border-radius: 10px;
-        position: relative;
-        top: 100px;
-        left: 4%;
-        padding: 25px;
-        width: 92.5%;
-    }
-    .infoTab6 .head6{
-        display: grid;
-    }
-    .infoTab6 .head6{
-        display: grid;
-    }
-    .infoTab6 .head6 .infoP6{
-        font-size: 30px;
-        margin-top: 8px;
-        margin-bottom: 10px;
-     }
-     .infoTab6 .head6 .provider6{
-        padding-right: 50px;
-        margin-bottom: 15px;
-     }    
-     .totalSel{
-        display: flex;
-    }
-    .calc{
-        background: hsl(231, 100%, 99%);
-        padding: 15px;
-        border-radius: 8px;
-    }
-    .calc .subscript{
-        border-bottom: 1px solid gray;
-        margin-bottom: 15px;
-    }
-    .calc .onlSer{
-        margin-bottom: 10px;
-    }
-    .calc .larStor{
-        margin-bottom: 10px;
-    }
-    .infoTab6 .totalSel{
-        padding: 15px;
-    }
-    .infoTab6 .subscript{
-        display: flex;
-    }
-    .infoTab6 .onlSer{
-        display: flex;
-    }
-    .infoTab6 .larStor{
-        display: flex;
-    }
-    .infoTab6 .totalSel{
-        display: flex;
-    }
-    
-
-    .container8{
-        background: grey;
-        height: 100vh;
-        display: none;
-    }
-    .infoTab8{
-        background: white;
-        border: 1px transparent;
-        border-radius: 15px;
-        position: relative;
-        top: 100px;
-        left: 4%;
-        padding: 25px;
-        width: 92.5%;
+    .infoTab8 {
         text-align: center;
         padding-top: 90px;
         padding-bottom: 90px;
     }
-    .infoTab8 img{
+
+    .infoTab8 img {
         width: 25%;
         margin-bottom: 17px; 
     }
-    .infoTab8 .thankYou{
-        text-align: center;
-        line-height: 1.7;
-    }
-
 }

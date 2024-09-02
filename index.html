@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,40 +13,36 @@
     </div>
 
     <div class="sliderNo">
-        <div class="slideNo1">1</div>
-        <div class="slideNo2">2</div>
-        <div class="slideNo3">3</div>
-        <div class="slideNo4">4</div>
-    </div>  
-
-    <div class="buttons1">
-        <button class="btn1">Go Back</button>
-        <button class="btn2">Next Step</button>
+        <div class="slideNo1" data-slide="1">1</div>
+        <div class="slideNo2" data-slide="2">2</div>
+        <div class="slideNo3" data-slide="3">3</div>
+        <div class="slideNo4" data-slide="4">4</div>
     </div>
-</div>
-   
-    <div class="container1">   
 
+    <div class="container1">   
         <div class="infoTab1">
             <div class="head">
-                <span class="infoP">Presonal info</span>
+                <span class="infoP">Personal info</span>
                 <span class="provider">Please provide your name, email address, and phone number.</span>
             </div>
-            <div class="name">
-                <label>Name</label>
-                <input type="text" placeholder="e.g Stephen King" required>
-            </div>
-            <div class="email">
-                <label>Email Address</label>
-                <input type="text" placeholder="e.g stephenKing@gmail.com" required>
-            </div>
-            <div class="phoneNumber">
-                <label>Phone Number</label>
-                <input type="text" placeholder="e.g +2348175587565" required>
-            </div>
+            <form>
+                <div class="name">
+                    <label>Name</label>
+                    <input id="name" type="text" placeholder="e.g Stephen King" required>
+                </div>
+                <div class="email">
+                    <label>Email Address</label>
+                    <input id="email" type="text" placeholder="e.g stephenKing@gmail.com" required>
+                </div>
+                <div class="phoneNumber">
+                    <label>Phone Number</label>
+                    <input id="phoneNumber" type="text" placeholder="e.g +2348175587565" required>
+                </div>
+                
+            </form>
         </div>  
-        <div class="buttons">
-            <button>Next Step</button>
+        <div class="buttons1">
+            <button class="next">Next Step</button>
         </div>
     </div>
     
@@ -56,58 +52,81 @@
                 <span class="infoP2">Select your plan</span>
                 <span class="provider2">You have the option of monthly or yearly billing.</span>
             </div>
-            <div class="arcade">
-                <img src="./assets/images/icon-arcade.svg" alt="">
-                <div class="text">
-                    <p>Arcade</p>
-                    <p>$9/mo</p>
-                </div>
+            <div class="toggle">
+                <button class="monthly active">Monthly</button>
+                <button class="yearly">Yearly</button>
             </div>
-            <div class="advanced">
-                <img src="./assets/images/icon-advanced.svg" alt="">
-                <div class="text">
-                    <p>Advanced</p>
-                    <p>$12/mo</p>
-                </div>
+            <div class="plans monthly">
+                <label class="plan">
+                    <input type="radio" name="plan" value="arcade" class="plan-input" required>
+                    <div class="arcade">
+                        <img src="./assets/images/icon-arcade.svg" alt="">
+                        <div class="text">
+                            <p>Arcade</p>
+                            <p>$9/mo</p>
+                        </div>
+                    </div>
+                </label>
+                <label class="plan">
+                    <input type="radio" name="plan" value="advanced" class="plan-input" required>
+                    <div class="advanced">
+                        <img src="./assets/images/icon-advanced.svg" alt="">
+                        <div class="text">
+                            <p>Advanced</p>
+                            <p>$12/mo</p>
+                        </div>
+                    </div>
+                </label>
+                <label class="plan">
+                    <input type="radio" name="plan" value="pro" class="plan-input" required>
+                    <div class="pro">
+                        <img src="./assets/images/icon-pro.svg" alt="">
+                        <div class="text">
+                            <p>Pro</p>
+                            <p>$15/mo</p>
+                        </div>
+                    </div>
+                </label> 
             </div>
-            <div class="pro">
-                <img src="./assets/images/icon-pro.svg" alt="">
-                <div class="text">
-                    <p>Pro</p>
-                    <p>$15/mo</p>
-                </div>
-            </div> 
+            <div class="plans yearly">
+                <label class="plan">
+                    <input type="radio" name="plan" value="arcade" class="plan-input" required>
+                    <div class="arcade">
+                        <img src="./assets/images/icon-arcade.svg" alt="">
+                        <div class="text">
+                            <p>Arcade</p>
+                            <p>$90/yr</p>
+                            <p>2 months free</p>
+                        </div>
+                    </div>
+                </label>
+                <label class="plan">
+                    <input type="radio" name="plan" value="advanced" class="plan-input" required>
+                    <div class="advanced">
+                        <img src="./assets/images/icon-advanced.svg" alt="">
+                        <div class="text">
+                            <p>Advanced</p>
+                            <p>$120/yr</p>
+                            <p>2 months free</p>
+                        </div>
+                    </div>
+                </label>
+                <label class="plan">
+                    <input type="radio" name="plan" value="pro" class="plan-input" required>
+                    <div class="pro">
+                        <img src="./assets/images/icon-pro.svg" alt="">
+                        <div class="text">
+                            <p>Pro</p>
+                            <p>$150/yr</p>
+                            <p>2 months free</p>
+                        </div>
+                    </div>
+                </label> 
+            </div>
         </div> 
-    </div>
-
-    <div class="container3"> 
-        <div class="infoTab3">
-            <div class="head3">
-                <span class="infoP3">Select your plan</span>
-                <span class="provider3">You have the option of monthly or yearly billing.</span>
-            </div>
-            <div class="arcade">
-                <img src="./assets/images/icon-arcade.svg" alt="">
-                <div class="text">
-                    <p>Arcade</p>
-                    <p>$90/yr</p>
-                </div>
-            </div>
-            <div class="advanced">
-                <img src="./assets/images/icon-advanced.svg" alt="">
-                <div class="text">
-                    <p>Advanced</p>
-                    <p>$120/yr</p>
-                </div>
-            </div>
-            <div class="pro">
-                <img src="./assets/images/icon-pro.svg" alt="">
-                <div class="text">
-                    <p>Pro</p>
-                    <p>$150/yr</p>
-                    <p>2 months free</p>
-                </div>
-            </div> 
+        <div class="buttons1">
+            <button class="back">Go Back</button>
+            <button class="next">Next Step</button>
         </div>
     </div>
 
@@ -117,81 +136,83 @@
                 <span class="infoP4">Pick add-ons</span>
                 <span class="provider4">Add-ons help enhance your gaming experience.</span>
             </div>
+    
+            <div class="toggle">
+                <button class="monthly active">Monthly</button>
+                <button class="yearly">Yearly</button>
+            </div>
 
-            <div class="onlineServices">
-                <input class="check1" type="checkbox">
-                <div class="onlSer">
-                    <p>Online service</p>
-                    <p>Access to multiplayer games</p>
+            <div class="planss monthly2">
+                <div class="onlineServices">
+                    <input type="radio" name="plans" value="onlineServices" class="check1" required>
+                    <div class="onlSer">
+                        <p>Online service</p>
+                        <p>Access to multiplayer games</p>
+                    </div>
+                    <div>
+                        <p>+$1/mo</p>
+                    </div>
                 </div>
-                <div>
-                    <p>+$1/mo</p>
+                <div class="largerStorage">
+                    <input type="radio" name="plans" value="largerStorage" class="check1" required>
+                    <div class="larSto">
+                        <p>Larger storage</p>
+                        <p>Extra 1TB of cloud save</p>
+                    </div>
+                    <div>
+                        <p>+$2/mo</p>
+                    </div>
+                </div>
+                <div class="customizableProfile">
+                    <input type="radio" name="plans" value="customizableProfile" class="check1" required>
+                    <div class="custPro">
+                        <p>Customizable Profile</p>
+                        <p>Custom theme on your profile</p>
+                    </div>
+                    <div>
+                        <p>+$2/mo</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="largerStorage">
-                <input class="check2" type="checkbox">
-                <div class="larSto">
-                    <p>Larger storage</p>
-                    <p>Extra 1TB of cloud save</p>
+            <div class="planss yearly2">
+                <div class="onlineServices">
+                    <input type="radio" name="addon" value="Online service">
+                    <div class="onlSer">
+                        <p>Online service</p>
+                        <p>Access to multiplayer games</p>
+                    </div>
+                    <div>
+                        <p>+$10/yr</p>
+                    </div>
                 </div>
-                <div>
-                    <p>+$2/mo</p>
-                </div>
-            </div>
             
-            <div class="customizableProfile">
-                <input class="check3" type="checkbox">
-                <div class="custPro">
-                    <p>Customizable Profile</p>
-                    <p>Custom theme on your profile</p>
+                <div class="largerStorage">
+                    <input type="radio" name="addon" value="Larger storage">
+                    <div class="larSto">
+                        <p>Larger storage</p>
+                        <p>Extra 1TB of cloud save</p>
+                    </div>
+                    <div>
+                        <p>+$20/yr</p>
+                    </div>
                 </div>
-                <div>
-                    <p>+$2/mo</p>
+
+                <div class="customizableProfile">
+                    <input type="radio" name="addon" value="customizableProfile">
+                    <div class="custPro">
+                        <p>Customizable Profile</p>
+                        <p>Custom theme on your profile</p>
+                    </div>
+                    <div>
+                        <p>+$20/yr</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="container5"> 
-        <div class="infoTab5">
-            <div class="head5">
-                <span class="infoP5">Pick add-ons</span>
-                <span class="provider5">Add-ons help enhance your gaming experience.</span>
-            </div>
-
-            <div class="onlineServices">
-                <input class="check1" type="checkbox">
-                <div class="onlSer">
-                    <p>Online service</p>
-                    <p>Access to multiplayer games</p>
-                </div>
-                <div>
-                    <p>+$10/yr</p>
-                </div>
-            </div>
-
-            <div class="largerStorage">
-                <input class="check2" type="checkbox">
-                <div class="larSto">
-                    <p>Larger storage</p>
-                    <p>Extra 1TB of cloud save</p>
-                </div>
-                <div>
-                    <p>+$20/yr</p>
-                </div>
-            </div>
-            
-            <div class="customizableProfile">
-                <input class="check3" type="checkbox">
-                <div class="custPro">
-                    <p>Customizable Profile</p>
-                    <p>Custom theme on your profile</p>
-                </div>
-                <div>
-                    <p>+$20/yr</p>
-                </div>
-            </div>
+        <div class="buttons1">
+            <button class="back">Go Back</button>
+            <button class="next">Next Step</button>
         </div>
     </div>
 
@@ -222,10 +243,13 @@
                 <span class="total"></span>
             </div>
         </div>
+        <div class="buttons1">
+            <button class="back">Go Back</button>
+            <button class="next">Next Step</button>
+        </div>
     </div>
 
     <div class="container8"> 
-
         <div class="infoTab8">
             <img src="./assets/images/icon-thank-you.svg" alt="">
             <div class="thankYou">
@@ -235,10 +259,12 @@
                     to email us at support@loremgaming.com.</p>
             </div>
         </div>
-
+        <div class="buttons1">
+            <button class="back">Go Back</button>
+            <button class="continue">Continue</button>
+        </div>
     </div>
 
-
-    
+    <script src="./script.js"></script>
 </body>
 </html>
